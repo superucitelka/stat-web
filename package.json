@@ -1,0 +1,16 @@
+{
+  "name": "stat-web",
+  "version": "1.0.0",
+  "description": "Rocnikovy projekt",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "author": "Marek Lucny",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.6.0"
+  }
+}
