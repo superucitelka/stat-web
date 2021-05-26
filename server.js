@@ -80,5 +80,17 @@ app.get("/api/heroes", (req, res) => {
     .catch(err => res.send('Soubor nebylo možné načíst', err));       
 });
 
+app.get("/api/towns", (req, res) => {
+    readJSON('data/towns.json')
+    .then(data => res.send(data))
+    .catch(err => res.send('Soubor nebylo možné načíst', err));       
+});
+
+app.get("/api/unesco", (req, res) => {
+    readJSON('data/unesco.json')
+    .then(data => res.send(data))
+    .catch(err => res.send('Soubor nebylo možné načíst', err));       
+});
+
 const PORT = process.env.PORT || 8080;
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
