@@ -1,7 +1,7 @@
 /* jQuery skript */
 $(function(){
     let mesta = [];
-    fetch('http://localhost:8080/api/towns')
+    fetch('https://frozen-headland-25457.herokuapp.com/api/towns')
     .then(response => { return response.json() })
     .then(json => { mesta = json; })
     .catch(function (error) {
@@ -9,7 +9,7 @@ $(function(){
     });
 
     let unesco = [];
-    fetch('http://localhost:8080/api/unesco')
+    fetch('https://frozen-headland-25457.herokuapp.com/api/unesco')
     .then(response => { return response.json() })
     .then(json => { unesco = json; })
     .catch(function (error) {
